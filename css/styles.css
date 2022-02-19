@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+  background-color:#212121;
+}
+
+main {
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto; /* centers the content*/
+  position: relative;
+  text-align: center; /* places navigation in the middle*/
+}
+
+/* All the links in the header*/
+
+.header-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-wrapper a:hover {
+  color: #639195;
+}
+
+.header-wrapper a:active {
+  text-decoration: underline;
+}
+
+
+#logotype {
+  width: 140px;
+  height: 120px;
+  position: absolute;
+  left: 2em;
+}
+
+#upper-links {
+  position: absolute;
+  top: .70em;
+  right: 3em;
+  color: white;
+  font-size: 0.8em;
+}
+
+
+/* nav styles*/
+
+.topnav {
+  padding-bottom: 1%;
+}
+
+.topnav input[type=text] {
+  width: 100%;
+  max-width: 400px;
+  padding: 1%;
+  margin-top: 5%;
+  border-radius: 8px;
+}
+
+.topnav ul {
+  list-style: none;
+}
+
+.topnav ul li {
+  display: inline-block;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+/* search styles*/
+.topnav input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* search icon for smaller screens*/
+.fa-search {
+  display: none;
+  position: absolute;
+  color: white;
+  top: .50em;
+  left: 1em;
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+
+.hamburger-button {
+position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
+top: .50em;
+right: 1em;
+display: none; 
+flex-direction: column;
+justify-content: space-between;
+width: 3em;
+height:2.5em;
+}
+
+.hamburger-button .bar {
+height: 0.25em;
+width: 100%;
+background-color: white;
+}
+
+.toggle { 
+display: none; /* Nav link only for hamburger menue*/
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding:2%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+
+  /*Slideshow styles*/
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* action button*/
+.action-button {
+  position: absolute;
+}
+
+/* Place in the middle of the image */
+.action-koontz {
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #BE441E;
+  color: white;
+  padding: 0.5% 2%;
+  border: none;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action-koontz:hover {
+  background-color: #993719;
+}
+
+.action-arne {
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 4px solid white;
+  padding: 0.5% 2%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action-arne:hover {
+  background: black;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dots {
+  text-align:center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+span.active {
+  background-color: #639195;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Footer styles*/
+.main-footer{
+  background-color:#212121;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-links p {
+  padding: 0.5em;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-links a :hover {
+  color: #639195;
+}
+
+/* Ipadish styles*/
+@media screen and (max-width: 900px){
+
+  #logotype {
+    width: 110px;
+    height: 90px;
+    }
+
+  .topnav input[type=text] {
+    max-width: 300px;
+  }
+}
+
+/*Mobile phone styles*/
+
+@media screen and (max-width: 700px){
+
+  .fa-search {
+    display: block;
+  }
+
+
+  #logotype {
+    position:static;
+    width: 110px;
+    height: 90px;
+    margin-bottom: 3%;
+    }
+
+    .header-wrapper {
+      text-align: center; /* when logotype has positipon static the logotype willl be centered in the middle*/
+    }
+
+    #upper-links {
+      display:none;
+    }
+
+    .topnav input {
+      display: none;
+    }
+
+    .navlinks {
+      display: none;
+    }
+
+  .toggle {
+    display: block;
+  }
+
+  .hamburger-button {
+   display: flex;
+   padding: 2%;
+  }
+
+  
+.navlinks.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.navlinks li{
+  width: 100%;
+  border: 2px solid #212121;
+  background-color: #37353e;
+}
+
+}
+
+  

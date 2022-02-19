@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+
+            <!-- search icon only visible when in smaller screens-->
+            <a href="#"><i class="fa fa-search"></i></a>
+            
+
+            <!--Logotype-->
+            <a href="index.html"><img src="images/creepyLogo.svg" alt="Logotyp" id="logotype" /></a>
+
+            <!--shopping cart-->
+            <div id="upper-links">
+                <span><a href="#">Varukorg<i class="fa fa-shopping-cart"></i></a></span>
+            </div>
+
+            <div class="topnav">
+                <!--search-->
+                <input type="text" placeholder="Search...">
+                <!--Nav bar-->
+                <nav class="navlinks">
+                    <ul>
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">Böcker</a></li>
+                        <li><a href="#">Info</a></li>
+                        <!--Link only visible in hamburger menu-->
+                        <li><a class="toggle" href="#">Varukorg</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Hamburger menu for smaller screens-->
+            <a href="#" class="hamburger-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/slideshowKoontz.jpg" style="width:100%" alt="Dean Koontz böcker">
+                    <button class="action-button action-koontz">Mer info</button>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/slideshowArne.jpg" style="width:100%" alt="Boktitel: min vän Arne">
+                    <button class="action-button action-arne">Mer info</button>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <h1>Popular books</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit pariatur tempora modi saepe
+                maiores
+                inventore, minima officiis molestias ad eligendi? Sit explicabo cum quidem earum dolor mollitia error
+                dignissimos blanditiis similique, harum pariatur, laborum iusto esse! Quae aliquam, et, debitis autem
+                repellendus ex mollitia voluptatem, dolorum tenetur quisquam voluptate iste.</p>
+            <a href="#">Länk</a>
+        </section>
+
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-links">
+
+            <p><a href="#">Kundservice</a></p>
+            <p><a href="#">Info om Cookies</a></p>
+
+            <div class="social-media-links">
+                <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+                <span><a href="#"><i class="fa fa-youtube-play"></i></a></span>
+                <span><a href="#"><i class="fa fa-facebook-f"></i></i></a></span>  
+            </div> 
+        </div>
+    </footer>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
