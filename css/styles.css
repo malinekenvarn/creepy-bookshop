@@ -77,7 +77,7 @@ h1 {
   max-width: 400px;
   padding: 1%;
   margin-top: 5%;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .topnav ul {
@@ -107,6 +107,18 @@ h1 {
   font-size: 1.5em;
 }
 
+/* The search field for smaller screens*/
+.toggle-search {
+  display: none;
+  width: 100%;
+  padding: 3%;
+}
+
+.toggle-search input {
+  width: 100%;
+  padding: 1%;
+  border-radius: 6px;
+}
 
 .hamburger-button {
 position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
@@ -322,6 +334,11 @@ span.active {
   width: 100%;
   border: 2px solid #212121;
   background-color: #37353e;
+}
+
+/* display search field when clicking the search icon*/
+.toggle-search.active {
+  display: block;
 }
 
 }

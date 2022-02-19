@@ -7,6 +7,14 @@ hamburgerButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
+/* Function to open search field when clicking on search icon*/
+const searchIcon = document.getElementById('searchIcon');
+const search = document.getElementsByClassName('toggle-search')[0];
+
+searchIcon.addEventListener('click', ()=>{
+  search.classList.toggle('active');
+})
+
 
 
 let slideIndex = 0;
