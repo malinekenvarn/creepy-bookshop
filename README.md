@@ -1,5 +1,7 @@
 # Creepy Bookshop
 
-**This is a project for the course Digital Imaging for the Web**
+**This is a project for the course Digital Imaging for the Web taken at Mid Sweden University**
 
-##About the project
+## About the project
+
+More info soon...
