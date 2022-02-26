@@ -57,7 +57,7 @@ h1 {
   left: 2em;
 }
 
-#upper-links {
+#shopping-cart {
   position: absolute;
   top: .70em;
   right: 3em;
@@ -101,8 +101,8 @@ h1 {
   display: none;
   position: absolute;
   color: white;
-  top: .50em;
-  left: 1em;
+  top: .05em;
+  right: 3em;
   padding: 2%;
   font-size: 1.5em;
 }
@@ -121,9 +121,9 @@ h1 {
 }
 
 .hamburger-button {
-position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
+position: absolute; /*forces it to be to the left without messing with the flow of the other elements*/
 top: .50em;
-right: 1em;
+left: 1em;
 display: none; 
 flex-direction: column;
 justify-content: space-between;
@@ -135,10 +135,6 @@ height:2.5em;
 height: 0.25em;
 width: 100%;
 background-color: white;
-}
-
-.toggle { 
-display: none; /* Nav link only for hamburger menue*/
 }
 
 
@@ -270,6 +266,21 @@ span.active {
   color: #639195;
 }
 
+/* Styles for book trailer banner*/
+
+video {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto; /* makes it responsive*/
+}
+
+.video-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Ipadish styles*/
 @media screen and (max-width: 900px){
 
@@ -303,8 +314,12 @@ span.active {
       text-align: center; /* when logotype has positipon static the logotype willl be centered in the middle*/
     }
 
-    #upper-links {
+    #shopping-cart span {
       display:none;
+    }
+
+    .fa-shopping-cart {
+      font-size: 1.6em;
     }
 
     .topnav input {
