@@ -166,11 +166,7 @@ background-color: white;
   position: absolute;
 }
 
-/* Place in the middle of the image */
-.action-koontz {
-  top: 70%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+.action-orange {
   background-color: #BE441E;
   color: white;
   padding: 0.5% 2%;
@@ -179,6 +175,14 @@ background-color: white;
   font-size: 1.2em;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Place in the middle of the image */
+.action-koontz {
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
 }
 
 .action-koontz:hover {
@@ -253,6 +257,20 @@ span.active {
   margin: 2%;
 }
 .articles img {
+  width: 100%; 
+}
+
+/* Book product page*/
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+  margin-top: 4%;
+  margin-bottom: 20%;
+}
+
+.products img {
   width: 100%; 
 }
 
