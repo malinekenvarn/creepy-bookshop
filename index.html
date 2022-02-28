@@ -62,17 +62,36 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img src="images/slideshows/slideshowKoontz.jpg" style="width:100%" alt="Dean Koontz böcker">
+                    <picture>
+                        <source type="image/jpg" media="(min-width: 701px)"
+                            srcset="images/slideshows/slideshowKoontz.jpg" style="width:100%">
+                        <source type="image/jpg" media="(max-width: 700px)" srcset="images/slideshows/koontzMobile.jpg"
+                            style="width:100%">
+                        <img src="images/slideshows/slideshowKoontz.jpg" style="width:100%" alt="Dean Koontz böcker">
+                        <!--Backup-->
+                    </picture>
                     <button class="action-button action-koontz">Mer info</button>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/slideshows/slideshowArne.jpg" style="width:100%" alt="Boktitel: Min vän Arne">
+                    <picture>
+                        <source type="image/jpg" media="(min-width: 701px)" srcset="images/slideshows/slideshowArne.jpg"
+                            style="width:100%">
+                        <source type="image/jpg" media="(max-width: 700px)" srcset="images/slideshows/arneMobile.jpg"
+                            style="width:100%">
+                        <img src="images/slideshows/slideshowArne.jpg" style="width:100%" alt="Boktitel: Min vän Arne"> <!--backup-->
+                    </picture>
                     <button class="action-button action-arne">Mer info</button>
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/slideshows/slideshowFun.jpg" style="width:100%" alt="Boktitel: Fun city">
+                    <picture>
+                        <source type="image/jpg" media="(min-width: 701px)" srcset="images/slideshows/slideshowFun.jpg"
+                            style="width:100%">
+                        <source type="image/jpg" media="(max-width: 700px)" srcset="images/slideshows/funcityMobile.jpg"
+                            style="width:100%">
+                        <img src="images/slideshows/slideshowFun.jpg" style="width:100%" alt="Boktitel: Fun city"> <!--backup-->
+                    </picture>
                     <button class="action-button action-arne">Mer info</button>
                 </div>
 
@@ -84,13 +103,19 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <h1>Popular books</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit pariatur tempora modi saepe
-                maiores
-                inventore, minima officiis molestias ad eligendi? Sit explicabo cum quidem earum dolor mollitia error
-                dignissimos blanditiis similique, harum pariatur, laborum iusto esse! Quae aliquam, et, debitis autem
-                repellendus ex mollitia voluptatem, dolorum tenetur quisquam voluptate iste.</p>
-            <a href="#">Länk</a>
+
+            <!--Article container-->
+            <div class="articles">
+                <article>
+                    <h2>Bästa skräck under 2021</h2>
+                    <p></p>
+                </article>
+                <article>
+                    <h2>Nya serier: Monster, zombies, och spöken!</h2>
+                    <p></p>
+                </article>
+            </div>
+
         </section>
 
     </main>

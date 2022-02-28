@@ -197,7 +197,7 @@ img {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: 4px solid white;
-  padding: 0.5% 2%;
+  padding: 0.5% 1%;
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
@@ -245,6 +245,12 @@ span.active {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* Article section*/
+.articles {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Footer styles*/
@@ -354,6 +360,10 @@ video {
 /* display search field when clicking the search icon*/
 .toggle-search.active {
   display: block;
+}
+
+.articles {
+  flex-direction: column;
 }
 
 }
