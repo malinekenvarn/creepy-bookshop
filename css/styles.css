@@ -246,6 +246,14 @@ span.active {
 .articles {
   display: flex;
   justify-content: space-between;
+  margin-top: 4%;
+}
+
+.articles article {
+  margin: 2%;
+}
+.articles img {
+  width: 100%; 
 }
 
 /*Footer styles*/
