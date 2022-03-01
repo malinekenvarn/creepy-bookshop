@@ -277,6 +277,7 @@ span.active {
 
 .products img {
   width: 100%; 
+  height: 75%;  /*So that all books get the same size*/
 }
 
 .book p{
