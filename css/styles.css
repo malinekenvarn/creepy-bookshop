@@ -25,6 +25,10 @@ h1 {
   font-family: 'Merriweather', serif;
 }
 
+h2 {
+  padding-bottom: 4%;
+}
+
 
 .header-wrapper {
   width: 100%;
@@ -300,13 +304,12 @@ span.active {
   display: flex;
 }
 
-.book {
+.book-details {
   padding-right: 5%;
   text-align: center;
 }
 
-.book .purchase-button {
-  margin-bottom: 5%;
+.book-details button {
   max-width: 300px;
 }
 
@@ -319,7 +322,7 @@ span.active {
 }
 
 .continue-shopping{
-  padding-bottom: 10%;
+  padding: 5%;
 }
 
 /*Footer styles*/
