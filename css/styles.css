@@ -60,7 +60,7 @@ h1 {
 #shopping-cart {
   position: absolute;
   top: .70em;
-  right: 3em;
+  right: 2em;
   color: white;
   font-size: 0.8em;
 }
@@ -101,9 +101,8 @@ h1 {
   display: none;
   position: absolute;
   color: white;
-  top: .05em;
+  top: 0.4em;
   right: 3em;
-  padding: 2%;
   font-size: 1.5em;
 }
 
@@ -369,7 +368,7 @@ video {
     }
 
     .fa-shopping-cart {
-      font-size: 1.6em;
+      font-size: 2em;
     }
 
     .topnav input {
@@ -410,14 +409,32 @@ video {
   flex-direction: column;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Small mobiles*/
+}
+
+/* Tiny mobiles */
 @media screen and (max-width: 300px){
-  .products {
-    display: flex;
-    flex-direction: column;
-  }
+  .hamburger-button {
+    width: 2em;
+    height:2em;
+    left: 1em;
+    }
+
+    #shopping-cart {
+      top: .5em;
+      right: 1em;
+      font-size: 0.9em;
+    }
+
+    .fa-search {
+      top: .5em;
+      right: 2.2em;
+      font-size: 1.3em;
+    }
 }
 
   
