@@ -264,17 +264,19 @@ span.active {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(200px,100%), 1fr));
-  gap: 5%;
-  margin-top: 4%;
-  margin-bottom: 20%;
+  /*grid-template-columns: repeat(auto-fill, minmax(min(200px,100%), 1fr));*/
+  /*grid-template-columns: repeat(4, 200px);*/
+  grid-template-columns: 30% 30% 30%;
   text-align: center;
+}
+
+.products article {
+  padding: 10%;
 }
 
 .products img {
   width: 100%; 
 }
-
 
 .book p{
   padding:2%;
@@ -408,6 +410,14 @@ video {
   flex-direction: column;
 }
 
+}
+
+/* Small mobiles*/
+@media screen and (max-width: 300px){
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
   
