@@ -264,14 +264,35 @@ span.active {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10%;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px,100%), 1fr));
+  gap: 5%;
   margin-top: 4%;
   margin-bottom: 20%;
+  text-align: center;
 }
 
 .products img {
   width: 100%; 
+}
+
+
+.book p{
+  padding:2%;
+}
+
+.info {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-weight: bold;
+}
+
+.purchase-button {
+  width: 100%;
+}
+
+.purchase-button:hover {
+  background-color: #993719;
 }
 
 /*Footer styles*/
