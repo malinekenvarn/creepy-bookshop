@@ -263,8 +263,6 @@ span.active {
 
 .products {
   display: grid;
-  /*grid-template-columns: repeat(auto-fill, minmax(min(200px,100%), 1fr));*/
-  /*grid-template-columns: repeat(4, 200px);*/
   grid-template-columns: 30% 30% 30%;
   text-align: center;
 }
@@ -434,6 +432,16 @@ video {
       top: .5em;
       right: 2.2em;
       font-size: 1.3em;
+    }
+
+    .action-koontz {
+      padding: 0.5% 2%;
+      font-size: 1em;
+    }
+    
+    .action-arne {
+      padding: 0.5% 2%;
+      font-size: 0.7em;
     }
 }
 
