@@ -190,9 +190,7 @@ background-color: white;
   top: 70%;
   left: 30%;
   transform: translate(-50%, -50%);
-
 }
-
 
 .action-arne {
   top: 70%;
@@ -211,7 +209,6 @@ background-color: white;
 .action-arne:hover {
   background: black;
 }
-
 
 /* The dots/bullets/indicators */
 
@@ -406,11 +403,6 @@ padding: 2% 0;
 .portrait {
   padding: 5%;
 }
-
-.project-description p{
-  padding: 4%;
-}
-
 
 /*Footer styles*/
 .main-footer{
