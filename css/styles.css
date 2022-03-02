@@ -325,6 +325,23 @@ span.active {
 }
 
 /* Shopping cart and checkout page*/
+
+#checkout-button {
+  background-color: #639195;
+  color: white;
+  padding: 0.5% 2%;
+  border: none;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#confirm-purchase-button {
+  margin-top: 4%;
+}
+
 #shopping-cart-table {
   text-align: left;
   padding-top: 5%;
@@ -354,6 +371,16 @@ padding: 2% 0;
 
 .checkoutForm {
   display: none;
+  padding: 4%;
+  background-color: #a6c7be;
+  margin-top: 4%;
+}
+
+.checkoutForm input[type=text], input[type=email]{
+  width: 100%;
+  padding: 1% 2%;
+  border-radius: 4px;
+  font-size: 1em;
 }
 
 .checkoutForm.active {
@@ -485,6 +512,10 @@ video {
 }
 
 #checkout-button {
+  width: 100%;
+}
+
+#confirm-purchase-button {
   width: 100%;
 }
 

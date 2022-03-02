@@ -80,7 +80,8 @@
                     <td>82 kr</td>
                     <td>1</td>
                 </tr>
-                <td id="table-colspan-1" colspan="4">Frakt: 49 kr</td>
+                <tr>
+                    <td id="table-colspan-1" colspan="4">Frakt: 49 kr</td>
                 </tr>
                 <tr>
                     <td id="table-colspan-2" colspan="4">Totalt: 264,2 kr</td>
@@ -90,10 +91,27 @@
             <div class="go-back-from-checkout-link">
                 <a href="books.html">Fortsätt handla</a>
             </div>
-            <button class="action-orange" id="checkout-button">Slutför köp</button>
+            <button id="checkout-button">Slutför köp</button>
 
             <div class="checkoutForm">
-                hej
+                <h2>Dina leveransuppgifter</h2>
+                <form action="#">
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="homeadress">Gatuadress</label>
+                    <input type="text" id="homeadress" name="homeadress"><br>
+                    <label for="zipcode">Postnummer</label>
+                    <input type="text" id="zipcode" name="zipcode"><br>
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input type="text" id="phonenumber" name="phonenumber"><br>
+                    <label for="delivery">Leveransställe (om annat än gatuadress)</label>
+                    <input type="text" id="delivery" name="delivery"><br>
+                    <label for="email">Email adress</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Meddelande (frivilligt)</label>
+                    <input type="text" id="message" name="message"><br>
+                </form>
+                <button class="action-orange" id="confirm-purchase-button">Bekräfta köp</button>
             </div>
 
         </section>
