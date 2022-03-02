@@ -31,4 +31,6 @@ I have made this site in Swedish because the books I had to work with had Swedis
 
 - Zombie Alice is actually a webcomic I made for 10 years ago. 
 
+Link to the site: https://studenter.miun.se/~maek2105/dt163g/project/index.html 
+
 
