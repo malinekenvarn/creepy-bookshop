@@ -387,6 +387,30 @@ padding: 2% 0;
   display: block;
 }
 
+/* About page */
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-container h2{
+  margin-top: 10%;
+}
+
+.info-container img {
+  width: 100%;
+  min-width: 396px;
+}
+
+.portrait {
+  padding: 5%;
+}
+
+.project-description p{
+  padding: 4%;
+}
+
 
 /*Footer styles*/
 .main-footer{
@@ -517,6 +541,10 @@ video {
 
 #confirm-purchase-button {
   width: 100%;
+}
+
+.info-container {
+  flex-direction: column;
 }
 
 }
