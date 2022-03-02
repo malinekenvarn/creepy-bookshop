@@ -178,6 +178,11 @@ background-color: white;
   font-size: 1.2em;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+.action-orange:hover {
+  background-color: #993719;
 }
 
 /* Place in the middle of the image */
@@ -188,9 +193,6 @@ background-color: white;
 
 }
 
-.action-koontz:hover {
-  background-color: #993719;
-}
 
 .action-arne {
   top: 70%;
@@ -295,10 +297,6 @@ span.active {
   width: 100%;
 }
 
-.purchase-button:hover {
-  background-color: #993719;
-}
-
 /* Single book pages*/
 
 .book-container {
@@ -325,6 +323,43 @@ span.active {
 .continue-shopping{
   padding: 5%;
 }
+
+/* Shopping cart and checkout page*/
+#shopping-cart-table {
+  text-align: left;
+  padding-top: 5%;
+  width: 100%;
+}
+
+#shopping-cart-table th{
+  border-bottom: 2px solid black;
+}
+
+#shopping-cart-table img{
+ padding-right: 1%;
+}
+
+#table-colspan-1 {
+  padding-top: 2%;
+  border-bottom: 2px solid black;
+}
+
+#table-colspan-2 {
+  padding-top: 2%;
+}
+
+.go-back-from-checkout-link{
+padding: 2% 0;
+}
+
+.checkoutForm {
+  display: none;
+}
+
+.checkoutForm.active {
+  display: block;
+}
+
 
 /*Footer styles*/
 .main-footer{
@@ -372,6 +407,7 @@ video {
     max-width: 300px;
   }
 }
+
 
 /*Mobile phone styles*/
 
@@ -446,6 +482,10 @@ video {
 
 .book-container {
   flex-direction: column;
+}
+
+#checkout-button {
+  width: 100%;
 }
 
 }

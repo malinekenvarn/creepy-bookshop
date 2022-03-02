@@ -15,6 +15,14 @@ searchIcon.addEventListener('click', ()=>{
   search.classList.toggle('active');
 })
 
+/* Function to show a form when clicking the button to confirm order and checkout*/
+const checkout = document.getElementById('checkout-button');
+const checkoutForm = document.getElementsByClassName('checkoutForm')[0];
+
+checkout.addEventListener('click', ()=>{
+  checkoutForm.classList.toggle('active');
+})
+
 
 
 let slideIndex = 0;
@@ -35,3 +43,4 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
