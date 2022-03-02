@@ -388,11 +388,14 @@ padding: 2% 0;
 
 .info-container {
   display: flex;
-  justify-content: space-between;
 }
 
-.info-container h2{
-  margin-top: 10%;
+.info-container h2 {
+  padding-bottom: 4%;
+}
+
+.portrait {
+  padding-right: 2%;
 }
 
 .info-container img {
@@ -400,9 +403,12 @@ padding: 2% 0;
   min-width: 396px;
 }
 
-.portrait {
-  padding: 5%;
+.portrait, .info-about-the-dev {
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
+
+
 
 /*Footer styles*/
 .main-footer{
